@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Cubano;
+  src: url(Cubano.ttf);
+}
+
+@font-face {
+  font-family: sofia-pro;
+  src: url(sofiapro-light.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sofia-pro, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+  background-color: #080808;
+}
+/* Example Markdown styles */
+body {
+	line-height: 1.5;
+	margin: 20px;
+  color: white;
+}
+  
+h1 {
+  font-size: 28px;
+  padding-top: 10px;
+  padding-left: 8%;
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: Cubano, sans-serif;
+  font-size: 20px;
+}
+
+hr {
+  width: 90%;
+  margin-bottom: 200px;
+}
+
+ul {
+  width: 90%;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 20px; */
+}
+
+ul div {
+  position: relative;
+  width: 70%;
+  /* margin-left: 20%; */
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+ul div:hover {
+  /* position: absolute; */
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  /* border: 4px solid black; */
+  border-radius: 0.75rem;
+  background-color: #262626;
+  margin-top: -30px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.75rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  float: right;
+  margin-top: 30px;
+}
+
+.navbar {
+  background-color: #080808;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  /* list-style: none; */
+  /* margin: 10px 20px; */
+  margin-right: 20px;
+}
+
+.navbar:first-child {
+  list-style-type: none;
+  margin-right: 760px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
