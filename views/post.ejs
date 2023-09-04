@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= post.slug %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="/public/css/blogs.css">
+</head>
+<body>
+  <!-- <h1><%= post.slug %></h1> -->
+  <div class="blog-post">
+    <button><a href="javascript:void(0);" onclick="goBack()">Go Back</a></button>
+    <p>Posted on: <%= post.postDate %></p>
+    <!-- <h1><%= post.title %></h1> -->
+    <!-- <p><%= post.date %></p> -->
+    <div><%- post.html %></div>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    function goBack() {
+      history.back();
+    }
+
+  </script>
+</body>
+</html>
