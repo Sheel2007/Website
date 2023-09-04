@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="navbar"><a href="/">Home</a></li>
+      <li class="navbar"><a href="/#about">About</a></li>
+      <li class="navbar"><a href="/#services">Services</a></li>
+      <li class="navbar"><a href="/#portfolio">Blogs</a></li>
+      <li class="navbar"><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <ul>
+    <!-- <% posts.forEach((post) => { %>
+      <div>
+        <img src="<%= post.imagePath %>" alt="<%= post.title %> Image">
+        <li>
+          <h2><%= post.slug %></h2>
+          <p><a href="/blog/<%= post.slug %>">Read More</a></p>
+        </li>
+      </div>
+    <% }); %> -->
+
+    <% posts.forEach((post) => { %>
+      <div>
+        <li>
+          <a href="/blog/<%= post.slug %>">
+            <img src="public/<%= post.imagePath %>" alt="<%= post.title %> Image">
+            <h2><%= post.slug %></h2>
+            <p><%= post.excerpt %></p>
+          </a>
+        </li>
+      </div>
+    <% }); %>
+    
+  </ul>
+</body>
+</html>
