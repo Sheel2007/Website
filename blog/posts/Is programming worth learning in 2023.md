@@ -5,7 +5,7 @@ image: /images/Is programming worth learning in 2023.jpg
 excerpt: Computer programming the process of writing code to perform actions on a computer, but is this skill really worth the hype now?
 ---
 
-# Is programming with learning in 2023?
+# Is programming worth learning in 2023?
 
 ![Python](/public/images/Is%20programming%20worth%20learning%20in%202023.jpg)
 
