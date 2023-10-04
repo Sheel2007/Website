@@ -1,6 +1,6 @@
 ---
 title: Python Variables and Datatypes
-date: 2023-01-32
+date: 2023-01-31
 image: /images/Python Variables and Datatypes.jpg
 excerpt: Variables are the building blocks of Python. Understanding how to use variables in Python is essential for writing efficient and effective code!
 ---
